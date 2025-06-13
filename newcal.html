@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>เครื่องคำนวณทางเภสัชกรรม</title>
 
+  <!-- Bootstrap CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
   
+  <!-- ฟอนต์ภาษาไทย -->
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet" />
   
   <style>
@@ -47,11 +49,11 @@
     }
     .tab-button.active {
       border-bottom-color: #0d6efd;
-      color: #000;
+      color: #0d6efd;
       font-weight: 600;
     }
     .tab-button:hover {
-      color: #000;
+      color: #0d6efd;
       background-color: rgba(13, 110, 253, 0.1);
     }
     .form-control:focus {
@@ -78,7 +80,7 @@
     }
     .nav-tabs .nav-link {
       border: none;
-      color: #000;
+      color: #6c757d;
       font-weight: 500;
       padding: 0.75rem 1.5rem;
       margin-bottom: 0.5rem;
@@ -88,7 +90,7 @@
     .nav-tabs .nav-link:hover {
       border-color: transparent;
       background-color: rgba(13, 110, 253, 0.1);
-      color: #000;
+      color: #0d6efd;
     }
     .nav-tabs .nav-link.active {
       background-color: #0d6efd;
@@ -111,6 +113,7 @@
           เครื่องคำนวณทางเภสัชกรรม
         </h1>
 
+        <!-- Tab Navigation -->
         <ul class="nav nav-tabs mb-4" id="calculatorTabs" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="bmi-tab-btn" data-bs-toggle="tab" data-bs-target="#bmi-tab" type="button" role="tab">BMI</button>
@@ -145,6 +148,7 @@
         </ul>
 
         <div class="tab-content" id="calculatorTabContent">
+          <!-- BMI Calculator -->
           <div class="tab-pane fade show active" id="bmi-tab" role="tabpanel">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xl-6">
@@ -175,6 +179,7 @@
             </div>
           </div>
 
+          <!-- BSA Calculator -->
           <div class="tab-pane fade" id="bsa-tab" role="tabpanel">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xl-6">
@@ -201,6 +206,7 @@
             </div>
           </div>
 
+          <!-- CrCl Calculator -->
           <div class="tab-pane fade" id="crcl-tab" role="tabpanel">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xl-6">
@@ -239,6 +245,7 @@
             </div>
           </div>
 
+          <!-- CKD-EPI Calculator -->
           <div class="tab-pane fade" id="ckd-epi-tab" role="tabpanel">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xl-6">
@@ -288,6 +295,7 @@
             </div>
           </div>
 
+          <!-- Child-Pugh Score -->
           <div class="tab-pane fade" id="childpugh-tab" role="tabpanel">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xl-6">
@@ -336,6 +344,7 @@
             </div>
           </div>
 
+          <!-- CKD Assessment -->
           <div class="tab-pane fade" id="ckd-tab" role="tabpanel">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xl-6">
@@ -367,6 +376,7 @@
             </div>
           </div>
 
+          <!-- HAS-BLED Calculator -->
           <div class="tab-pane fade" id="hasbled-tab" role="tabpanel">
             <div class="row justify-content-center">
               <div class="col-lg-10 col-xl-8">
@@ -444,7 +454,8 @@
             </div>
           </div>
 
-          <div class="tab-pane fade" id="chadsvasc-tab" role="tabpanel">
+          <!-- CHA₂DS₂-VASc Calculator -->
+<div class="tab-pane fade" id="chadsvasc-tab" role="tabpanel">
   <div class="row justify-content-center">
     <div class="col-lg-10 col-xl-8">
       <div class="card calculator-card">
@@ -515,6 +526,7 @@
   </div>
 </div>
 
+<!-- IBW Calculator -->
 <div class="tab-pane fade" id="ibw-tab" role="tabpanel">
   <div class="row justify-content-center">
     <div class="col-lg-10 col-xl-8">
@@ -554,6 +566,7 @@
   </div>
 </div>
 
+<!-- ABW Calculator -->
 <div class="tab-pane fade" id="abw-tab" role="tabpanel">
   <div class="row justify-content-center">
     <div class="col-lg-10 col-xl-8">
@@ -595,11 +608,10 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div> </div> </div> </div> <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-<script>
+        <script>
 // Function to show error messages (if you have one)
 function showError(message) {
   // Implement your error display logic here, e.g., using an alert or a dedicated div
@@ -1059,20 +1071,20 @@ document.getElementById('calculate-abw').addEventListener('click', () => {
   document.getElementById('abw-result').classList.remove('d-none'); // Changed from 'hidden' to 'd-none'
 });
 </script>
-
+<footer>
 <footer class="copyright text-center py-4 mt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <p class="mb-2 text-gray-700">
-          <small>© 2025 Pannawich-NPR. All rights reserved.</small>
-        </p>
-        <p class="mb-0 text-gray-600">
-          <small>เครื่องคำนวณทางเภสัชกรรม | สำหรับการศึกษาและอ้างอิงเท่านั้น</small>
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="mb-2 text-gray-700">
+            <small>© 2025 Pannawich-NPR. All rights reserved.</small>
+          </p>
+          <p class="mb-0 text-gray-600">
+            <small>เครื่องคำนวณทางเภสัชกรรม | สำหรับการศึกษาและอ้างอิงเท่านั้น</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
